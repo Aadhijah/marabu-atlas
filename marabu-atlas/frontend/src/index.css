@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body {
+  @apply bg-sand text-navy font-sans antialiased;
+}
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition;
+}
+.btn-primary { @apply bg-teal text-white hover:bg-teal-dark; }
+.btn-ghost  { @apply border border-navy/20 text-navy hover:bg-navy/5; }
+.card { @apply bg-white rounded-xl shadow-sm border border-navy/5; }
+.ipt { @apply w-full border border-navy/20 rounded-lg px-3 py-2 bg-white text-sm; }

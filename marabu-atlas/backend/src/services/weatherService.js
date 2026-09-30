@@ -21,7 +21,7 @@ export async function getCurrentWeather(lat, lng) {
     return mockWeather();
   }
 }
-
+// 5-day forecast (3-hour intervals)
 export async function getForecast(lat, lng) {
   if (!KEY()) return { daily: Array.from({ length: 5 }, mockWeather) };
   try {
